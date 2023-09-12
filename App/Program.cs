@@ -1,7 +1,7 @@
 ﻿using System;
 using Timer = System.Timers.Timer;
 
-namespace HelloWorld
+namespace nsMath
 {
     class Program
     {
@@ -9,21 +9,11 @@ namespace HelloWorld
         {
             Timer timer = new Timer();
             timer.Interval = TimeSpan.FromSeconds(10).TotalMilliseconds;
+            timer.Elapsed += (sender, e) => Math();
+            timer.Enabled = true;
 
-            // Subscribe to the Elapsed event and specify the method to execute
-            timer.Elapsed += TimerElapsed;
-
-            // Start the timer
-            timer.Start();
-
-            // Keep the program running
             Console.WriteLine("Wait for it..");
             Console.ReadLine();
-        }
-
-        private static void TimerElapsed(object? sender, System.Timers.ElapsedEventArgs e)
-        {
-            Math();
         }
 
         private static void Math()
