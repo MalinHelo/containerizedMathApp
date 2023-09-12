@@ -17,7 +17,7 @@ You will need to install the following programs if you don't have them:
    
    1.1 Copy the shortcut in GitHub
    ![image](https://github.com/MalinHelo/containerizedMathApp/assets/130759636/eb6628da-a0e6-4309-9e6a-c2dbc5ba4101)
-   1.2 In Visual Studio Code -> Clone Git Repository -> Past the shortcut -> Select destination fot the             repository -> open the cloned repository.
+   1.2 In Visual Studio Code -> Clone Git Repository -> Past the shortcut -> Select destination for the             repository -> open the cloned repository.
    
 3.  Start Docker Desktop
 4.  In Visual Studio terminal runt the following commands in this order:
@@ -36,7 +36,7 @@ You will need to install the following programs if you don't have them:
     docker build -t math-image -f Dockerfile .
     ```
     4.4
-    If you want to you can run this code to check if the image you builded exits. You will see a list of      all the images that are installed.
+    If you want to you can run this code to check if the image you builded exsits. You will see a list of      all the images that are installed.
     ```
     docker images
     ```
@@ -62,4 +62,4 @@ You will need to install the following programs if you don't have them:
     docker stop math-container
     ```
 ### Docker
-In Docker Desktop you can check if the images and containers exits. It's also a good idea to check        the logs.
+In Docker Desktop you can check if the images and containers exsits. It's also a good idea to check        the logs.
